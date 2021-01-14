@@ -1,0 +1,1009 @@
+java -cp . HTTP1Server 3435
+Server has been initialized on port 3435
+client connected!
+Just for testing, print the length of line: 2
+[GET]
+[/index.html]
+End of test
+Check 1
+Writing to client: HTTP/1.0 400 Bad Request
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[KICK]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 400 Bad Request
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 12
+[GET]
+[/i]
+[n]
+[d]
+[e]
+[x]
+[.]
+[h]
+[t]
+[m]
+[l]
+[HTTP/1.0]
+End of test
+Check 1
+Writing to client: HTTP/1.0 400 Bad Request
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[get]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 400 Bad Request
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/index.html]
+[HTTP/1.1]
+End of test
+Writing to client: HTTP/1.0 505 HTTP Version Not Supported
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[PUT]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 501 Not Implemented
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[DELETE]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 501 Not Implemented
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[LINK]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 501 Not Implemented
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[UNLINK]
+[/index.html]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 501 Not Implemented
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/top_secret.txt]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/top_secret.txt]
+Writing to client: HTTP/1.0 403 Forbidden
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/missing.zip]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 404 Not Found
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/index.html]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/index.html]
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[HEAD]
+[/doc_root/index.html]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/index.html]
+Writing to client: HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 3191
+Last-Modified: Wed, 15 Jul 2015 04:14:40 GMT
+Content-Encoding: identity
+Allow: GET, POST, HEAD
+Expires: Sat, 21 Jul 2021 11:00:00 GMT
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/resources/google.png]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/resources/google.png]
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/resources/bitcoin.pdf]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 304 Not Modified
+Expires: Sat, 21 Jul 2021 11:00:00 GMT
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/resources/ls]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/resources/ls]
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/doc_root/resources/bitcoin.pdf]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/resources/bitcoin.pdf]
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[HEAD]
+[/doc_root/resources/bitcoin.pdf]
+[HTTP/1.0]
+End of test
+Trying to open file: [/ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project/doc_root/resources/bitcoin.pdf]
+Writing to client: HTTP/1.0 200 OK
+Content-Type: application/pdf
+Content-Length: 184292
+Last-Modified: Tue, 14 Jul 2015 14:13:49 GMT
+Content-Encoding: identity
+Allow: GET, POST, HEAD
+Expires: Sat, 21 Jul 2021 11:00:00 GMT
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[GET]
+[/env.cgi]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 404 Not Found
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/env.cgi]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 411 Length Required
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/env.cgi]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 500 Internal Server Error
+
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/env.cig]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 500 Method Not Allowed
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/forbidden.cgi]
+[HTTP/1.0]
+End of test
+Writing to client: HTTP/1.0 403 Forbidden
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/upcase.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 4
+Payload before decoding [x=1
+]
+Payload is [x=1
+], and actual length 4
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44810
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 4
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/upcase.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+X
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/upcase.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 7
+Payload before decoding [x=1&y=2]
+Payload is [x=1&y=2], and actual length 7
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44820
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 7
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/upcase.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+X
+Y
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/basic.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 0
+Payload before decoding []
+Payload is [], and actual length 0
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44832
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 0
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/basic.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+Content-Type: text/html; charset=ISO-8859-1
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Basic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+
+</body>
+</html>
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/env.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 0
+Payload before decoding []
+Payload is [], and actual length 0
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44834
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 0
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/env.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+CONTENT_LENGTH = 0
+SCRIPT_NAME = /cgi_bin/env.cgi
+HTTP_FROM = me@mycomputer
+HTTP_USER_AGENT = telnet
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/env.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 4
+Payload before decoding [x=1
+]
+Payload is [x=1
+], and actual length 4
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44840
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 4
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/env.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+CONTENT_LENGTH = 4
+SCRIPT_NAME = /cgi_bin/env.cgi
+HTTP_FROM = me@mycomputer
+HTTP_USER_AGENT = telnet
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/param.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 23
+Payload before decoding [greeting=hello&name=you]
+Payload is [greeting=hello&name=you], and actual length 23
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44844
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 23
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/param.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+greeting=hello
+name=you
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/param.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 4
+Payload before decoding [c=!!]
+Payload is [c=!], and actual length 3
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44850
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 3
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/param.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+c=!
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/param.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 14
+Payload before decoding [c=!!&d=![a!,b!]
+Payload is [c=!&d=[a,b!], and actual length 11
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44856
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 11
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/param.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+c=!
+d=[a,b!
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/param.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 36
+Payload before decoding [file=..!/doc_root!/index.html&line=3]
+Payload is [file=../doc_root/index.html&line=3], and actual length 34
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44868
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 34
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/param.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+file=../doc_root/index.html
+line=3
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/print.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 35
+Payload before decoding [file=.!/doc_root!/index.html&line=3]
+Payload is [file=./doc_root/index.html&line=3], and actual length 33
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44876
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 33
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/print.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/print.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 37
+Payload before decoding [file=.!/doc_root!/index.html&line=100]
+Payload is [file=./doc_root/index.html&line=100], and actual length 35
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44882
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 35
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/print.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+Sorry, I think the line number you entered is greater than the number of lines in the file.
+
+Done writring
+client connected!
+Just for testing, print the length of line: 3
+[POST]
+[/cgi_bin/exec.cgi]
+[HTTP/1.0]
+End of test
+Length of paylod 0
+Payload before decoding []
+Payload is [], and actual length 0
+Key = PATH, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/ilab/users/kya8/.local/bin:/ilab/users/kya8/bin
+Key = XDG_DATA_DIRS, Value = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+Key = DBUS_SESSION_BUS_ADDRESS, Value = unix:path=/run/user/87621/bus
+Key = HTTP_FROM, Value = me@mycomputer
+Key = VSCODE_GIT_IPC_HANDLE, Value = /run/user/87621/vscode-git-1cb675cd46.sock
+Key = LC_TYPE, Value = en_US.UTF-8 
+Key = MAIL, Value = /var/mail/kya8
+Key = KRB5CCNAME, Value = KEYRING:persistent:87621
+Key = COLORTERM, Value = truecolor
+Key = LOGNAME, Value = kya8
+Key = VSCODE_GIT_ASKPASS_NODE, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/node
+Key = TERM_PROGRAM_VERSION, Value = 1.51.1
+Key = PWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology/Second_Project
+Key = GIT_ASKPASS, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass.sh
+Key = USES_VSCODE_SERVER_SPAWN, Value = true
+Key = S_COLORS, Value = auto
+Key = AMD_ENTRYPOINT, Value = vs/server/remoteExtensionHostProcess
+Key = LANGUAGE, Value = en_US.UTF-8
+Key = SERVER_PORT, Value = 44890
+Key = SHELL, Value = /bin/bash
+Key = OLDPWD, Value = /ilab/users/kya8/Desktop/Fall20/Internet_Technology
+Key = GTK_MODULES, Value = appmenu-gtk-module
+Key = CONTENT_LENGTH, Value = 0
+Key = LC_ALL, Value = en_US.UTF-8
+Key = HTTP_USER_AGENT, Value = telnet
+Key = VERBOSE_LOGGING, Value = true
+Key = SHLVL, Value = 4
+Key = MAKEFLAGS, Value = 
+Key = JAVA_HOME, Value = /usr/lib/jvm/default-java
+Key = TERM, Value = xterm-256color
+Key = LANG, Value = en_US.UTF-8
+Key = XDG_SESSION_ID, Value = 233023
+Key = PIPE_LOGGING, Value = true
+Key = VSCODE_GIT_ASKPASS_MAIN, Value = /ilab/users/kya8/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/extensions/git/dist/askpass-main.js
+Key = LIBVIRT_DEFAULT_URI, Value = qemu:///system
+Key = VSCODE_IPC_HOOK_CLI, Value = /run/user/87621/vscode-ipc-5911c071-713b-40a5-8d0c-515d2c5828d0.sock
+Key = SCRIPT_NAME, Value = /cgi_bin/exec.cgi
+Key = MFLAGS, Value = 
+Key = SERVER_NAME, Value = 128.6.4.102
+Key = _, Value = /usr/bin/make
+Key = TERM_PROGRAM, Value = vscode
+Key = UBUNTU_MENUPROXY, Value = 1
+Key = SSH_CLIENT, Value = 73.112.176.182 61595 22
+Key = USER, Value = kya8
+Key = SSH_CONNECTION, Value = 73.112.176.182 61595 128.6.4.102 22
+Key = MAKELEVEL, Value = 1
+Key = XDG_RUNTIME_DIR, Value = /run/user/87621
+Key = HOME, Value = /ilab/users/kya8
+Key = MAKE_TERMERR, Value = /dev/pts/21
+
+Writing to client: HTTP/1.0 204 No Content
+
+
+Done writring
+Makefile:27: recipe for target 'server' failed
+Makefile:27: recipe for target 'server' failed
